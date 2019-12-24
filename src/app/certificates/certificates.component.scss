@@ -1,0 +1,24 @@
+@import "~@angular-mdc/theme/material";
+
+.certificates-masonry-images {
+  padding-top: 30px;
+}
+
+.standard-image-list {
+  @include mdc-image-list-aspect(1.5);
+  @include mdc-image-list-standard-columns(4);
+}
+
+.masonry-image-list {
+  @include mdc-image-list-masonry-columns(4);
+}
+
+@media (max-width: 599px) {
+  .standard-image-list {
+    @include mdc-image-list-standard-columns(3);
+  }
+
+  .masonry-image-list {
+    @include mdc-image-list-masonry-columns(3);
+  }
+}
