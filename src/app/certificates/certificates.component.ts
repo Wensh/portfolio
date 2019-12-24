@@ -12,37 +12,33 @@ export class CertificatesComponent implements OnInit {
   ngOnInit() {
     this.certificateImages = [
       {
-        image: "assets/AT Computing C++.jpg",
+        image: "assets/at_computing_cpp.jpg",
         description: "AT Computing C++"
       },
       {
-        image: "assets/Cognitive Computing.png",
+        image: "assets/cognitive_computing.png",
         description: "Cognitive Computing"
       },
       {
-        image: "assets/Ohio Business Course.jpg",
+        image: "assets/ohio_business_course.jpg",
         description: "Business Course"
       },
       {
-        image: "assets/Introduction to Swift Programming.pdf",
+        image: "assets/introduction_to_swift_programming.pdf",
         description: "Introduction to Swift Programming"
       },
       {
-        image: "assets/TMap.jpg",
+        image: "assets/tmap.jpg",
         description: "TMap"
       },
       {
-        image: "assets/iOS App Development Basics.pdf",
+        image: "assets/ios_app_development_basics.pdf",
         description: "iOS App Development Basics"
       },
       {
-        image: "assets/App Design and Development for iOS.pdf",
+        image: "assets/app_design_and_development_for_ios.pdf",
         description: "App Design and Development for iOS"
       }
     ];
-  }
-
-  openFullCertificateImage() {
-    console.log("stuff");
   }
 }

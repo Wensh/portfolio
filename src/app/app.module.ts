@@ -9,13 +9,15 @@ import { HomeComponent } from "./home/home.component";
 import { CertificatesComponent } from "./certificates/certificates.component";
 import { MenuOverviewComponent } from "./menu-overview/menu-overview.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { CertificateDetailComponent } from './certificate-detail/certificate-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CertificatesComponent,
-    MenuOverviewComponent
+    MenuOverviewComponent,
+    CertificateDetailComponent
   ],
   imports: [
     BrowserModule,

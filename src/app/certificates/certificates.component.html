@@ -1,7 +1,7 @@
 <div class="certificates-masonry-images">
   <mdc-image-list #demomasonry [masonry]="true" class="masonry-image-list">
     <mdc-image-list-item *ngFor="let cert of certificateImages">
-      <a (click)="openFullCertificateImage()">
+      <a routerLink="/certificate/{{ cert.image }}">
         <img mdcImageListImage src="{{ cert.image }}"
       /></a>
       <mdc-image-list-supporting>
