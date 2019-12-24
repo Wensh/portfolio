@@ -1,6 +1,12 @@
+img {
+  border-radius: 50%;
+  position: relative;
+  top: 40px;
+}
+
 .basic-container {
   padding: 10px;
 }
 .mat-button {
-  font-size: 18px !important;
+  font-size: 28px !important;
 }
