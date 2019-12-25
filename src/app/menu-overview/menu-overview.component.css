@@ -4,6 +4,12 @@ img {
   top: 40px;
 }
 
+@media (max-width: 500px) {
+  img {
+    display: none;
+  }
+}
+
 .basic-container {
   padding: 10px;
 }

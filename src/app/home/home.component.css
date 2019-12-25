@@ -1,5 +1,15 @@
+img {
+  border-radius: 50%;
+}
+
 .text-body {
   padding-top: 30px;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+@media (min-width: 501px) {
+  img {
+    display: none;
+  }
 }
