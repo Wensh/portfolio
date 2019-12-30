@@ -1,5 +1,5 @@
 <div class="certificates-masonry-images">
-  <mdc-image-list #demomasonry [masonry]="true" class="masonry-image-list">
+  <mdc-image-list [masonry]="true" class="masonry-image-list">
     <mdc-image-list-item *ngFor="let cert of certificateImages">
       <a routerLink="/certificate/{{ cert.image }}">
         <img mdcImageListImage src="{{ cert.image }}"
