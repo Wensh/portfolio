@@ -28,6 +28,14 @@ export class CertificatesComponent implements OnInit {
         description: "Introduction to Swift Programming"
       },
       {
+        image: "assets/objective_c_for_beginners.jpg",
+        description: "Objective C for beginners"
+      },
+      {
+        image: "assets/c_programming_ios_development.jpg",
+        description: "C Programming iOS Development Starts Here"
+      },
+      {
         image: "assets/tmap.jpg",
         description: "TMap"
       },
