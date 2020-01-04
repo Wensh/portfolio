@@ -24,7 +24,7 @@ export class CertificatesComponent implements OnInit {
         description: "Business Course"
       },
       {
-        image: "assets/introduction_to_swift_programming.pdf",
+        image: "assets/introduction_to_swift_programming.jpg",
         description: "Introduction to Swift Programming"
       },
       {
@@ -40,11 +40,11 @@ export class CertificatesComponent implements OnInit {
         description: "TMap"
       },
       {
-        image: "assets/ios_app_development_basics.pdf",
+        image: "assets/ios_app_development_basics.jpg",
         description: "iOS App Development Basics"
       },
       {
-        image: "assets/app_design_and_development_for_ios.pdf",
+        image: "assets/app_design_and_development_for_ios.jpg",
         description: "App Design and Development for iOS"
       }
     ];
