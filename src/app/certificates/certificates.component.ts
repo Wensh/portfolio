@@ -46,6 +46,10 @@ export class CertificatesComponent implements OnInit {
       {
         image: "assets/app_design_and_development_for_ios.jpg",
         description: "App Design and Development for iOS"
+      },
+      {
+        image: "assets/profibus.jpg",
+        description: "Certified PROFIBUS Engineer"
       }
     ];
   }
