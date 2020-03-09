@@ -50,6 +50,10 @@ export class CertificatesComponent implements OnInit {
       {
         image: "assets/profibus.jpg",
         description: "Certified PROFIBUS Engineer"
+      },
+      {
+        image: "assets/angular_the_complete_guide.jpg",
+        description: "Angular - The Complete Guide"
       }
     ];
   }
