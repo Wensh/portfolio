@@ -59,6 +59,16 @@ export class CertificatesComponent implements OnInit {
         image: "assets/bootstrap.jpg",
         description: "Bootstrap 4",
       },
+      {
+        image: "assets/simulink_state_flow_1.jpg",
+        description:
+          "Simulink and Stateflow for Logic-Driven System Modeling day 1",
+      },
+      {
+        image: "assets/simulink_state_flow_2.jpg",
+        description:
+          "Simulink and Stateflow for Logic-Driven System Modeling day 2",
+      },
     ];
   }
 }
