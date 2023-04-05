@@ -1,6 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
-import { MatButtonModule } from "@angular/material";
+import { MatButtonModule } from "@angular/material/button";
 import { MdcImageListModule } from "@angular-mdc/web";
 
 import { AppRoutingModule } from "./app-routing.module";
