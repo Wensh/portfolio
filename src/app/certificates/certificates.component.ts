@@ -69,6 +69,10 @@ export class CertificatesComponent implements OnInit {
         description:
           "Simulink and Stateflow for Logic-Driven System Modeling day 2",
       },
+      {
+        image: "assets/Csharp_Fundamentals.jpg",
+        description: "C# 10 Fundamentals",
+      },
     ];
   }
 }
