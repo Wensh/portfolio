@@ -1,7 +1,6 @@
 import { BrowserModule } from "@angular/platform-browser";
 import { NgModule } from "@angular/core";
 import { MatButtonModule } from "@angular/material/button";
-import { MdcImageListModule } from "@angular-mdc/web";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
@@ -9,7 +8,7 @@ import { HomeComponent } from "./home/home.component";
 import { CertificatesComponent } from "./certificates/certificates.component";
 import { MenuOverviewComponent } from "./menu-overview/menu-overview.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { CertificateDetailComponent } from './certificate-detail/certificate-detail.component';
+import { CertificateDetailComponent } from "./certificate-detail/certificate-detail.component";
 
 @NgModule({
   declarations: [
@@ -17,16 +16,15 @@ import { CertificateDetailComponent } from './certificate-detail/certificate-det
     HomeComponent,
     CertificatesComponent,
     MenuOverviewComponent,
-    CertificateDetailComponent
+    CertificateDetailComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatButtonModule,
-    MdcImageListModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule {}
