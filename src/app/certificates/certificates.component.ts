@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, HostListener, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-certificates",
@@ -6,8 +6,16 @@ import { Component, OnInit, ViewEncapsulation } from "@angular/core";
   styleUrls: ["./certificates.component.scss"],
 })
 export class CertificatesComponent implements OnInit {
-  certificateImages = [];
-  constructor() {}
+  certificateImages: { image: string; description: string }[] = [];
+  columns!: number;
+
+  @HostListener("window:resize") calculateColumns() {
+    this.columns = Math.floor(window.innerWidth / 460) || 1;
+  }
+
+  constructor() {
+    this.calculateColumns();
+  }
 
   ngOnInit() {
     this.certificateImages = [
@@ -61,13 +69,11 @@ export class CertificatesComponent implements OnInit {
       },
       {
         image: "assets/simulink_state_flow_1.jpg",
-        description:
-          "Simulink and Stateflow for Logic-Driven System Modeling day 1",
+        description: "Simulink and Stateflow for Logic-Driven System Modeling day 1",
       },
       {
         image: "assets/simulink_state_flow_2.jpg",
-        description:
-          "Simulink and Stateflow for Logic-Driven System Modeling day 2",
+        description: "Simulink and Stateflow for Logic-Driven System Modeling day 2",
       },
       {
         image: "assets/Csharp_Fundamentals.jpg",

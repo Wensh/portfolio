@@ -1,24 +1,22 @@
-@import "~@angular-mdc/theme/material";
+.cert-columns {
+  display: grid;
+  grid-auto-flow: column;
 
-.certificates-masonry-images {
-  padding-top: 30px;
-}
-
-.standard-image-list {
-  @include mdc-image-list-aspect(1.5);
-  @include mdc-image-list-standard-columns(4);
-}
-
-.masonry-image-list {
-  @include mdc-image-list-masonry-columns(4);
-}
-
-@media (max-width: 599px) {
-  .standard-image-list {
-    @include mdc-image-list-standard-columns(3);
+  img {
+    transition: transform 0.8s;
+    display: block;
+    width: 100%;
   }
 
-  .masonry-image-list {
-    @include mdc-image-list-masonry-columns(3);
+  &:hover img {
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
+    }
   }
+}
+
+.cert-cell {
+  padding: 40px;
+  text-align: center;
 }
