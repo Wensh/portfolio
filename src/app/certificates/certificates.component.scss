@@ -1,0 +1,22 @@
+.cert-columns {
+  display: grid;
+  grid-auto-flow: column;
+
+  img {
+    transition: transform 0.8s;
+    display: block;
+    width: 100%;
+  }
+
+  &:hover img {
+    &:hover {
+      transform: scale(1.2);
+      box-shadow: 2px 2px 5px grey, -2px -2px 5px grey;
+    }
+  }
+}
+
+.cert-cell {
+  padding: 40px;
+  text-align: center;
+}

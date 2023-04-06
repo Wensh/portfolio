@@ -1,11 +1,13 @@
 <div>
-  <div>
-    <div *ngFor="let cert of certificateImages">
-      <a routerLink="/certificate/{{ cert.image }}">
-        <img src="{{ cert.image }}"
-      /></a>
-      <div>
-        <span>{{ cert.description }}</span>
+  <div class="cert-columns">
+    <div class="masonry-column" *ngFor="let col of [].constructor(columns); index as i">
+      <div *ngFor="let cert of certificateImages | masonry : columns : i + 1">
+        <div class="cert-cell">
+          <a routerLink="/certificate/{{ cert.image }}"> <img src="{{ cert.image }}" /></a>
+          <div>
+            <span>{{ cert.description }}</span>
+          </div>
+        </div>
       </div>
     </div>
   </div>
