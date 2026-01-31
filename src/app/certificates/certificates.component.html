@@ -1,14 +1,18 @@
 <div>
   <div class="cert-columns">
-    <div class="masonry-column" *ngFor="let col of [].constructor(columns); index as i">
-      <div *ngFor="let cert of certificateImages | masonry : columns : i + 1">
-        <div class="cert-cell">
-          <a routerLink="/certificate/{{ cert.image }}"> <img src="{{ cert.image }}" /></a>
+    @for (col of [].constructor(columns); track col; let i = $index) {
+      <div class="masonry-column">
+        @for (cert of certificateImages | masonry : columns : i + 1; track cert) {
           <div>
-            <span>{{ cert.description }}</span>
+            <div class="cert-cell">
+              <a routerLink="/certificate/{{ cert.image }}"> <img src="{{ cert.image }}" /></a>
+              <div>
+                <span>{{ cert.description }}</span>
+              </div>
+            </div>
           </div>
-        </div>
+        }
       </div>
-    </div>
+    }
   </div>
 </div>
