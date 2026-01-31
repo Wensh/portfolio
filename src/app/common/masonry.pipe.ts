@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from "@angular/core";
 
 @Pipe({
-  name: "masonry",
+    name: "masonry",
+    standalone: false
 })
 export class MasonryPipe implements PipeTransform {
   transform(value: any[], numColumns: number, colNum: number): any {

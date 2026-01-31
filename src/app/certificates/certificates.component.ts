@@ -1,9 +1,10 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 
 @Component({
-  selector: "app-certificates",
-  templateUrl: "./certificates.component.html",
-  styleUrls: ["./certificates.component.scss"],
+    selector: "app-certificates",
+    templateUrl: "./certificates.component.html",
+    styleUrls: ["./certificates.component.scss"],
+    standalone: false
 })
 export class CertificatesComponent implements OnInit {
   certificateImages: { image: string; description: string }[] = [];

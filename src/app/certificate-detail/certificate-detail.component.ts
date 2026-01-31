@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
-  selector: 'app-certificate-detail',
-  templateUrl: './certificate-detail.component.html',
-  styleUrls: ['./certificate-detail.component.scss'],
+    selector: 'app-certificate-detail',
+    templateUrl: './certificate-detail.component.html',
+    styleUrls: ['./certificate-detail.component.scss'],
+    standalone: false
 })
 export class CertificateDetailComponent implements OnInit {
   certificateImage: string | undefined;
