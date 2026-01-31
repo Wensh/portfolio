@@ -29,4 +29,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Publish
 
-Website is published with Netlify with Github integration.
+Website is published with Netlify (Github integration).
