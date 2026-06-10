@@ -1,10 +1,10 @@
 import { Component, HostListener, OnInit } from "@angular/core";
 
 @Component({
-    selector: "app-certificates",
-    templateUrl: "./certificates.component.html",
-    styleUrls: ["./certificates.component.scss"],
-    standalone: false
+  selector: "app-certificates",
+  templateUrl: "./certificates.component.html",
+  styleUrls: ["./certificates.component.scss"],
+  standalone: false,
 })
 export class CertificatesComponent implements OnInit {
   certificateImages: { image: string; description: string }[] = [];
@@ -79,6 +79,10 @@ export class CertificatesComponent implements OnInit {
       {
         image: "assets/Csharp_Fundamentals.jpg",
         description: "C# 10 Fundamentals",
+      },
+      {
+        image: "assets/architect_foundation.jpg",
+        description: "Architect Foundation",
       },
     ];
   }
