@@ -1,10 +1,11 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
     selector: 'app-certificate-detail',
     templateUrl: './certificate-detail.component.html',
     styleUrls: ['./certificate-detail.component.scss'],
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class CertificateDetailComponent implements OnInit {
